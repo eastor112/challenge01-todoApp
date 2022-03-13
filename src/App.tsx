@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import DailyNote from './components/organisms/dailyNote/DailyNote'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+
+      <div className='header'>
+        <div className='line'></div>
+        <h2>Weekly Schedule</h2>
+        <div className='line'></div>
+      </div>
+
+      <div className='notes-container'>
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+        <DailyNote />
+
+      </div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
